@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>くらはのprofile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5"rel="stylesheet" type="text/css" />
+
+<body class="bg-base-200 min-h-screen flex flex-col justify-between">
+
+  <div class="navbar bg-base-100 shadow-md sticky top-0 z-50">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl font-bold">くらはのprofile</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1 text-sm">
+        <li><a href="#comment">ひとこと</a></li>
+        <li><a href="#likes">好きなもの</a></li>
+        <li><a href="#learning">学び</a></li>
+        <li><a href="#works">作ったもの</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="container mx-auto max-w-3xl px-4 py-8 space-y-10">
+
+    <div class="text-center space-y-3">
+      <div class="avatar placeholder">
+        <div class="bg-primary text-primary-content rounded-full w-24 h-24 flex items-center justify-center ring ring-primary ring-offset-base-100 ring-offset-2">
+  <span class="text-3xl font-bold leading-none">H</span>
+</div>
+      </div>
+      <h1 class="text-3xl font-bold">くらは
+      </h1>
+    </div>
+
+    <section id="comment" class="space-y-2">
+      <h2 class="text-lg font-bold border-l-4 border-primary pl-3">ひとこと</h2>
+      <div class="alert alert-success shadow-sm">
+        <span class="text-xl">💭</span>
+        <span>家に帰って気づいたら寝落ちしてる</span>
+      </div>
+    </section>
+
+    <section id="likes" class="space-y-3">
+      <h2 class="text-lg font-bold border-l-4 border-primary pl-3">好きなもの</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="card bg-base-100 shadow-md border border-base-300">
+          <div class="card-body p-5">
+            <h3 class="card-title text-base text-primary">🎮 ゲーム</h3>
+            <p class="text-sm">ジャンル問わずプレイ。休日に没頭するのが至福の時間です。</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body p-5">
+            <h3 class="card-title text-base text-secondary">🧩 謎解き</h3>
+            <p class="text-sm">脱出ゲームや公演型イベントに参加。解けた瞬間の快感が最高です。</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-xl border border-base-300">
+          <div class="card-body p-5">
+            <h3 class="card-title text-base text-accent">🍶 お酒</h3>
+            <p class="text-sm">美味しい料理に合わせて嗜みます。会話も弾む大切な趣味です。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="space-y-2">
+      <h2 class="text-lg font-bold border-l-4 border-primary pl-3">最近学んでいること</h2>
+      <div class="card bg-base-100 shadow-md border border-base-300">
+        <div class="card-body flex-row items-center gap-4 p-5">
+          <div class="text-3xl">💡</div>
+          <div>
+            <span class="badge badge-outline badge-secondary text-xs mb-1">実体験からの気づき</span>
+            <p class="font-semibold text-base">笑うと酔いが回るのが早い</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="space-y-2">
+      <h2 class="text-lg font-bold border-l-4 border-primary pl-3">この授業で作ったもの</h2>
+      <div class="card bg-base-100 shadow-md border border-base-300">
+        <div class="card-body p-5">
+          <div class="flex items-center justify-between">
+            <h3 class="font-bold text-base">daisyUI の自己紹介カード</h3>
+            <span class="badge badge-primary">第5回</span>
+          </div>
+          <p class="text-sm text-base-content/70 mt-1">Tailwind CSS と daisyUI を組み合わせて作成した単体コンポーネントです。</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer footer-center p-4 bg-base-100 text-base-content border-t border-base-300">
+    <aside>
+      <p>© くらは 2026</p>
+    </aside>
+  </footer>
+
+</body>
+</html>
